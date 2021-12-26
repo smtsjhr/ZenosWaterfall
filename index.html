@@ -1,0 +1,31 @@
+        <!DOCTYPE HTML>
+        <html>
+            <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+                <link rel="stylesheet" type="text/css" href="../style.css"/>
+            </head>
+            <body>
+                
+                
+                
+                                                                                        <img src="ZenosWaterfall.gif "/>
+                                                                                          <div class="caption"><div class="caption">
+<p><a href="http://www.wolfram.com/mathematica/" target="_blank">Mathematica</a> code:</p>
+<pre>S[n_, t_] := Sin[n*3 Pi/50 + t]<br/><br/>ListAnimate[<br/> Show[<br/>   Table[<br/>    Plot[<br/>     100 - n + (20*Abs[S[n,t]] + .02)*Exp[-(x - 4*S[n, t])^2/Abs[S[n,t]]], <br/>     {x, -10, 10},<br/>    PlotStyle -&gt; Directive[Black, Thick], PlotRange -&gt; {{-7, 7}, {0, 100}},<br/>    Filling -&gt; Axis, FillingStyle -&gt; White, Axes -&gt; False, AspectRatio -&gt; Full, <br/>    ImageSize -&gt; {500, 750}],<br/>  {n, 1, 100, 1}]],<br/>{t, .001, 2 Pi + .001, (2 Pi + .001)/30}, AnimationRunning-&gt;False]</pre>
+</div> </div>
+                                    
+                
+                
+                
+                
+                                <div id="footer">
+                <span id="timestamp"> June 4th, 2012 5:02pm </span>
+                                                          <span class="tag">GIF</span>
+                                          <span class="tag">Mathematica</span>
+                                          <span class="tag">waterfall plot</span>
+                                          <span class="tag">wavy</span>
+                                                    </div>
+            </body>
+        </html>
+
+        
